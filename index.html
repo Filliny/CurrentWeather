@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Current Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/sun.png">
+</head>
+<body onload="fillFromOrigin()">
+<div id="weather_wrapper">
+    <div id="search_city" class="block">
+        <div id="header"><img src="img/sun.png" alt="">Current Weather</div>
+        <div id="search_block">
+            <form onsubmit="fillFromSearch(); return false">
+                <input type="text" placeholder="Search" required>
+                <button id="btn_srch" type="submit"></button>
+            </form>
+        </div>
+    </div>
+    <div id="current_weather" class="block">
+        <div id="current_city">city</div>
+        <div id="current_date">date</div>
+        <div id="weather_main">sunny</div>
+        <div id="min_temp">Min temperature</div>
+        <div id="max_temp">Max temperature</div>
+        <div id="wind_speed">Wind speed (km/h)</div>
+        <div id="min_temp_value">18º</div>
+        <div id="max_temp_value">20º</div>
+        <div id="wind_speed_value">3</div>
+        <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="weather_icon" id="weather_image">
+        <div id="current_temp">19ºC</div>
+    </div>
+    <div id="error_weather" class="block">
+        <div id="status_num">404</div>
+        <div id="status_string">NOT FOUND</div>
+        <div id="error_message">Please enter a different city</div>
+    </div>
+    <div id="hourly_weather" class="block">
+        <div id="hourly">Hourly</div>
+        <div id="week_day">Sunday</div>
+        <div id="forecast">Forecast</div>
+        <div id="hourly_temp">Temp (ºC)</div>
+        <div id="hourly_wind">Wind (km/h)</div>
+    </div>
+
+</div>
+
+    <script src="script/weather.js"></script>
+</body>
+</html>
