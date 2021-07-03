@@ -74,7 +74,8 @@ body {
 
 
 #current_city {
-    grid-column: 2 ;
+    grid-column-start: 2;
+    grid-column-end: 4;
     grid-row: 2;
     color: #00B0A8FF;
 }
