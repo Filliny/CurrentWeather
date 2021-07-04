@@ -171,33 +171,33 @@ body {
 #hourly_weather {
     display: grid;
     grid-template-rows: 20px 20px 20px 100px 20px 20px 20px 20px 20px 20px;
-    grid-template-columns: 100px 20px 100px 100px 100px 100px 100px 100px auto 20px;
+    grid-template-columns: 20px 100px 20px 100px 100px 100px 100px 100px 100px 20px;
 }
 
 #hourly {
     grid-row: 1;
-    grid-column: 1;
+    grid-column: 2;
     color: #00B0A8FF;
 }
 
 #forecast {
     grid-row: 6;
-    grid-column: 1;
+    grid-column: 2;
 }
 
 #hourly_temp {
     grid-row: 8;
-    grid-column: 1;
+    grid-column: 2;
 }
 
 #hourly_wind {
     grid-row: 10;
-    grid-column: 1;
+    grid-column: 2;
 }
 
 #week_day {
     grid-row: 3;
-    grid-column: 1;
+    grid-column: 2;
 }
 
 .hourly {
